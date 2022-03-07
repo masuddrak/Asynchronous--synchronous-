@@ -11,6 +11,16 @@ setTimeout(() => {
 setTimeout(() => {
     console.log('give me 20 taka')
 }, 4000);
+// setInterval............
+let second=0
+const timeID=setInterval(()=>{
+    second++
+    console.log(second)
+    if(second>10){
+        clearInterval(timeID)
+    }
+},2000)
+
 
 console.log('give me 3 taka')
 console.log('give me 4 taka')
